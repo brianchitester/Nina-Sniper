@@ -31,7 +31,6 @@ function NinaProvider({ children }: NinaProviderProps) {
       fetchAll();
     }
   }, [allReleases]);
-  console.log(allReleases);
 
   const value = { allReleases };
   return <NinaContext.Provider value={value}>{children}</NinaContext.Provider>;
