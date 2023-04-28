@@ -1,6 +1,6 @@
 # Nina Sniper
 
-A tool for browsing releases on Nina Protocol with various sort options
+A tool for browsing releases on [Nina Protocol](https://www.ninaprotocol.com/) with various sort options
 
 - Lowest total supply
 - Lowest supply ratio
