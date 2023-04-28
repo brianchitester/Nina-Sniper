@@ -4,7 +4,13 @@ import { NinaProvider } from "./context/nina";
 
 function App() {
   return (
-    <div style={{ margin: "10px" }}>
+    <div
+      style={{
+        margin: "10px",
+        maxWidth: "100%",
+        overflow: "hidden",
+      }}
+    >
       <NinaProvider>
         <div style={{ margin: "10px", display: "flex", gap: "10px" }}>
           <h1>Nina Sniper</h1>

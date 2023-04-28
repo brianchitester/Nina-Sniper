@@ -67,7 +67,7 @@ function List() {
             return (
               <div
                 key={release.publicKey}
-                style={{ display: "flex", gap: "1em", margin: "1em 0" }}
+                style={{ display: "flex", gap: "0.5em", margin: "1em 0" }}
               >
                 <img
                   src={release.metadata.image}
