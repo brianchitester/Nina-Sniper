@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import List from "./components/List";
+import { NinaProvider } from "./context/nina";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ margin: "10px" }}>
+      <NinaProvider>
+        <div style={{ margin: "10px", display: "flex", gap: "10px" }}>
+          <h1>Nina Sniper</h1>
+          <h3>
+            by{" "}
+            <a href="https://www.ninaprotocol.com/hubs/corporationplaza">
+              Corporation Plaza
+            </a>
+          </h3>
+        </div>
+        <List />
+      </NinaProvider>
     </div>
   );
 }
