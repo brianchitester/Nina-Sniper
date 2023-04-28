@@ -27,6 +27,8 @@ function List() {
           return b.accountData.release.price - a.accountData.release.price;
         case "lowPrice":
           return a.accountData.release.price - b.accountData.release.price;
+        default:
+          return 0;
       }
     });
 
@@ -71,6 +73,7 @@ function List() {
                   src={release.metadata.image}
                   style={{ width: "64px", height: "64px" }}
                   loading="lazy"
+                  alt={release.metadata.name}
                 />
                 <a href={release.metadata.external_url}>
                   <span>{release.metadata.name}</span>
